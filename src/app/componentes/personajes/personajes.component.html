@@ -1,0 +1,38 @@
+<div>
+    <h1>Los Simpsons</h1>
+</div>
+
+<div class="row">
+    <div id="searchContainer">
+      <input type="text" id="searchInput" placeholder="Buscar personaje por nombre..." [(ngModel)]="searchTerm">
+  
+      <button id="buscarBtn" (click)="buscarPersonajes()">Buscar</button>
+      <button id="limpiarBtn" (click)="mostrarTodo()">Mostrar Todo</button>
+    </div>
+  </div>
+  
+  <br />
+  
+  <div class="row">
+    <div id="charactersContainer" class="d-flex flex-wrap">
+      <div class="card" *ngFor="let character of characters">
+        <img [src]="character.Imagen" class="card-img-top" [alt]="character.Nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.Nombre }}</h5>
+          <p class="card-text">{{ character.Historia }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <br />
+    <br />
+  
+    <div class="row">
+        <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item" *ngFor="let page of pages" (click)="cambiarPagina(page)">{{ page }}</li>
+            </ul>
+          </div>
+    </div>
+  </div>
+   

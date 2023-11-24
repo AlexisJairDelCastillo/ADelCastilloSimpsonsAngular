@@ -1,0 +1,106 @@
+#charactersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    background-color: deepskyblue;
+    width: 18rem;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .pagination-container {
+    text-align: center;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  .pagination-item {
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+  .pagination-item:hover {
+    background-color: #2078b3;
+  }
+  
+  /* Resto de estilos */
+  body {
+    background-color: #e7dc0c;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0084df;
+    font-family: 'Homer Simpson Revised', sans-serif;
+    font-size: 70px;
+  }
+  
+  #searchContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  #buscarBtn,
+  #limpiarBtn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #buscarBtn:hover,
+  #limpiarBtn:hover {
+    background-color: #2078b3;
+  }
+  
+  #limpiarBtn {
+    background-color: #ff2525;
+  }
+  
+  #limpiarBtn:hover {
+    background-color: #b01010;
+  }
+  
